@@ -1,0 +1,57 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+.mcontainer {
+    background-color: white;
+    border-radius: 20px;
+    width: 80%; 
+    max-width: 400px; 
+    margin: 70px auto;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ }
+ .bg {
+    background-color: white;
+ }
+ .mtable {
+    margin: 50px auto;
+ }
+ h4,h3 {
+    text-align: center;
+ }
+ .convert {
+    background-color: blue;
+    margin: 20px auto; 
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 80%; 
+    text-align: center;
+    color: white;
+ }
+ #degrees, #result {
+    border: none;
+    box-shadow: 2px 2px 1px 1px whitesmoke; 
+    padding: 10px;
+    margin: 5px 0;
+ }
+ #st{
+   margin-bottom: 10px;
+ }
+ select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+ }
+@media (max-width: 768px) {
+ .mcontainer {
+    width: 80%;
+ }
+}
+@media (max-width: 576px) {
+ .mcontainer {
+    width: 100%;
+ }
+}

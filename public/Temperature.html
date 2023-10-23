@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperature converter</title>
+    <link rel="stylesheet" href="./Temperature.css">
+    <script src="./Temperature.js"></script>
+</head>
+<body>
+    <div class="mcontainer">
+        <h4 style="color: blue;" id="st"> </h4>
+        <h3>Temperature converter</h3>
+        <table class="mtable">
+            <tr><td><label>Degrees</label></td><td><label>Types</label></td></tr>
+            <tr>
+                <td><input type="number" id="degrees" name="degrees"></td>
+                <td>
+                    <select id="type" name="type">
+                        <option value="F">Fahernheit</option>
+                        <option value="C">Celsius</option>
+                        <option value="K">Kelvin</option>
+                    </select>
+                </td>
+            </tr><br>
+            <tr><td><label>Result</label></td></tr>
+            <tr><td><h5 id="result" name="result"> </h5></td></tr>
+        </table>
+        <center><button class="convert" onclick="convertClick()">convert</button></center>
+    </div>
+    <h4 align="center">creator by suresh</h4>
+</body>
+</html>
