@@ -1,7 +1,9 @@
+
 function convertClick(){
-    var  d = document.querySelector("#degrees") as HTMLInputElement;
+    console.log("Hello");
+    var  d = document.getElementById("inputNumber") as HTMLInputElement;
     var degree = d.valueAsNumber;
-    var t = document.getElementById("type") as HTMLSelectElement;
+    var t = document.getElementById("typeSelected") as HTMLSelectElement;
     var type = t.value;
     var r:string;
     if (type === "F") {
@@ -12,14 +14,19 @@ function convertClick(){
         r = `${((9 / 5) * degree + 32).toFixed(2)} F`;
     }
     var result = document.getElementById("result") as HTMLHeadingElement;
-    result.innerText = r;
+    if((r!=='NaN C')&& (r!=='NaN F') && (r!=='NaN K')){
+        result.innerText = r;
+    }
+    
 }
+let inputEl=document.getElementById("inputNumber") as HTMLInputElement;
+inputEl.addEventListener("keyup",convertClick);
 document.addEventListener('DOMContentLoaded', () => {
     var t = document.querySelector("#st") as HTMLHeadingElement;
-    function updateTimer() {
+    
+    
+    setInterval(()=> {
         const time = new Date().toLocaleTimeString();
         t.innerText = time;
-    }
-    setInterval(updateTimer, 1000);
-    updateTimer();
+    }, 1000);
 });

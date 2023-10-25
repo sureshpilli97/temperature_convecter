@@ -6,9 +6,9 @@
 .mcontainer {
     background-color: white;
     border-radius: 20px;
-    width: 80%; 
     max-width: 400px; 
     margin: 70px auto;
+    height: 260px;
     padding-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  }
@@ -37,13 +37,14 @@
     margin: 5px 0;
  }
  #st{
-   margin-bottom: 10px;
+   font-size: 20px;
  }
- select {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 10px;
+ select,#inputNumber{
+   box-shadow: none !important;
+   border: 1px solid black !important;
+ }
+ .result-heading{
+   font-size: 16px;
  }
 @media (max-width: 768px) {
  .mcontainer {
